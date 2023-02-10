@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DanhBa">
+    <children>
+        <TextField fx:id="txtName" layoutX="37.0" layoutY="51.0" promptText="Name" />
+        <TextField fx:id="tlPhone" layoutX="37.0" layoutY="119.0" promptText="Telephone" />
+        <Button layoutX="90.0" layoutY="187.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+        <Text fx:id="txtInfo" layoutX="599.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông Tin" />
+        <TableView fx:id="tbView" layoutX="512.0" layoutY="118.0" prefHeight="319.0" prefWidth="237.0">
+            <columns>
+                <TableColumn fx:id="cName" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="cPhone" prefWidth="75.0" text="Telephone" />
+                <TableColumn fx:id="cAction" prefWidth="75.0" text="Action" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>
